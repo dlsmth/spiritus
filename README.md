@@ -6,7 +6,7 @@ Built quickly in React, with TypeScript and leveraging/exploring the MaterialUI 
 
 https://www.dalesmith.com/spiritus
 
-HTML, CSS, ReactJS, TypeScript, MaterialUI, Recharts
+HTML, CSS, ReactJS, MaterialUI, Recharts
 
 Spiritus Screenshots:
 
