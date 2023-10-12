@@ -1,0 +1,1522 @@
+:root {
+  --breathe-in: rgba(0, 255, 0, 1);
+  --breathe-out: rgba(255, 0, 0, 1);
+  --breathe-hold: rgba(255, 255, 0, 1);
+  /* --breathe-hold: rgba(0, 255, 255, 1); */
+  --dot-purple: rgba(255, 0, 255, .85);
+
+}
+
+.app {
+  background-color: #000;
+  text-align: center;
+  width: 100%;
+}
+
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+} */
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+.appHeader {
+  /* background-color: #282c34; */
+  /* background-color: #1976d2; */
+  /* background: linear-gradient(rgba(25, 118, 210, .5), rgba(0, 0, 0, 1)); */
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  /* background-color: #fff; */
+  /* min-height: 100vh; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* font-size: calc(10px + 2vmin); */
+  /* color: white; */
+}
+
+.appHeader h1 {
+  color: #fff;
+  color: rgba(25, 118, 210, 1);
+  font-family: 'Chakra Petch';
+  font-size: 60px;
+  margin: 0;
+  margin-left: -5px;
+  margin-top: -25px;
+  opacity: .5;
+  padding: 0;
+  text-align: left;
+}
+
+.sectionContainer {
+  background-color: #000;
+  color: #fff;
+  height: 100vh;
+  text-align: left;
+  /* height: 100vh;
+  overflow: hidden; */
+}
+
+.sectionContainer h2 {
+  font-family: 'Chakra Petch';
+  font-size: 22px;
+  margin: 0;
+  margin-top: .5rem;
+  padding: 1rem;
+  padding-bottom: .25rem;
+}
+
+.sectionContainer p {
+  font-family: 'Chakra Petch';
+  font-size: 13px;
+  margin: 0;
+  opacity: .85;
+  padding: 1rem;
+  padding-bottom: 0;
+  padding-top: .5rem;
+  text-align: left;
+}
+
+.sectionContainer ul {
+  font-family: 'Chakra Petch';
+  font-size: 13px;
+  margin: 1rem;
+  margin-bottom: 0;
+  margin-top: .5rem;
+  opacity: .85;
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.sectionContainer li {
+  font-family: 'Chakra Petch';
+  font-size: 13px;
+  list-style: square;
+  padding-bottom: .25rem;
+}
+
+.breathContainer {
+  background-color: #151515;
+  color: #fff;
+  font-family: 'Chakra Petch';
+  /* height: (100vh - 78px - 50px - 48px); */
+  height: 100vh;
+  overflow: hidden;
+  text-align: left;
+}
+
+.breathHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.breathHeader p{
+  opacity: .65;
+}
+
+.breathContainer h2 {
+  color: rgba(255, 255, 255, .85);
+  font-size: 20px;
+  margin: 0;
+  padding: 1rem;
+  padding-bottom: .5rem;
+}
+
+.breathContainer p {
+  font-size: 15px;
+  margin: 0;
+  opacity: .85;
+  padding: 1rem;
+  padding-bottom: 0;
+  padding-top: .5rem;
+}
+
+.learningContainer {
+  background-color: #fff;
+  border-radius: 8px;
+  color: #333;
+  margin: 1rem!important;
+  margin-top: .5rem!important;
+  opacity: 1!important;
+  padding: 1rem!important;
+}
+
+.analyticsContainer {
+  background-color: #fff;
+  border-radius: 8px;
+  color: #333;
+  margin: 1rem!important;
+  margin-top: 1rem!important;
+  opacity: 1!important;
+  padding: 1rem!important;
+  text-align: center;
+}
+
+.analyticsContainer h3 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+.analyticsContainer p {
+  margin: 0;
+  padding: 0;
+}
+
+.analyticsContainer ul {
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+  padding-top: .25rem;
+  padding-bottom: 0;
+}
+
+.analyticsContainer li {
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.breathBox {
+  /* background-color: #666; */
+  margin: 1rem auto;
+  padding: 0;
+  width: 90%;
+}
+
+.speedContainer {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.speedContainer p {
+  font-size: 12px;
+  text-align: center;
+}
+
+.sliderLabel {
+  display: flex;
+  font-family: 'Chakra Petch';
+  justify-content: space-between;
+  width: 100%;
+}
+
+.sliderLabel p {
+  font-size: 9px;
+  opacity: .85;
+  padding: 0;
+}
+
+.sliderLabel p:nth-of-type(2) {
+  font-size: 11px;
+}
+
+.squareBox {
+  background: #fff;
+  display: grid;
+  grid-template-columns: 6;
+  grid-template-rows: 6;
+}
+
+.squareBoxRow {
+  background: #cc0000;
+}
+
+.squareBoxHole {
+  background: blue;
+  height: 20px;
+  width: 20px;
+}
+
+.css-heg063-MuiTabs-flexContainer {
+  justify-content: space-between;
+}
+
+.css-gy4i07-MuiPaper-root {
+  max-width: 480px;
+}
+
+.css-a19841-MuiButtonBase-root-MuiTab-root {
+  color: rgba(255, 255, 255, .85);
+  font-family: 'Chakra Petch'!important;
+  font-size: 10px!important;
+  /* padding: 12px 2px!important; */
+}
+
+.css-a19841-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #2392ff;
+  /* font-weight: 700!important; */
+}
+
+.css-13lzy42-MuiButtonBase-root-MuiButton-root {
+  font-family: 'Chakra Petch'!important;
+  letter-spacing: 1px;
+}
+
+.css-1if7ygn-MuiButtonBase-root-MuiButton-root {
+  font-family: 'Chakra Petch'!important;
+  letter-spacing: 1px;
+}
+
+/* .css-16lloyr-MuiBottomNavigation-root {
+  padding-bottom: 2rem!important;
+  height: 56px!important;
+} */
+
+/* .MuiBottomNavigation-root {
+  background-color: #2392ff;
+  margin-bottom: 4rem!important;
+} */
+
+.css-gy4i07-MuiPaper-root {
+  background-color: #000!important;
+  color: rgba(255, 255, 255, .85)!important;
+  margin: 0 auto;
+  padding-bottom: 1.5rem!important;
+}
+
+/* .css-1bjk3jo-MuiButtonBase-root-MuiBottomNavigationAction-root {
+  color: inherit!important;
+} */
+
+
+/* .css-gy4i07-MuiPaper-root {
+  color: #fff!important;
+  padding-bottom: 1.5rem!important;
+} */
+
+.css-16lloyr-MuiBottomNavigation-root {
+  background-color: #000!important;
+  /* color: #fff!important; */
+}
+
+.css-1bjk3jo-MuiButtonBase-root-MuiBottomNavigationAction-root {
+  color: inherit;
+}
+
+.css-1ez9utm {
+  /* background-color: #000!important; */
+  padding-bottom: 1.5rem!important;
+}
+
+.css-15vkkzt {
+  font-size: 11px!important;
+}
+
+.legend {
+  align-items: baseline;
+  display: flex;
+  color: rgba(255, 255, 255, .85);
+  justify-content: center;
+  text-align: center;
+}
+
+.lci {
+  background-color: var(--breathe-in);
+  border-radius: 20px;
+  height: 100%;
+  height: 10px;
+  justify-self: center;
+  opacity: .5;
+  width: 20px;
+}
+
+.lco {
+  background-color: var(--breathe-out);
+  border-radius: 20px;
+  height: 100%;
+  height: 10px;
+  justify-self: center;
+  margin-left: 2rem;
+  opacity: .5;
+  width: 20px;
+}
+
+.b1Wrapper {
+  display: grid;
+  grid-template-columns: 20px auto;
+  /* grid-template-columns: repeat(6, 1fr); */
+  gap: 5px;
+  /* grid-template-rows: repeat(6, 1fr); */
+  /* margin: 1rem; */
+  height: 300px;
+}
+
+.b1Wrapper .box {
+  background-color: red;
+}
+
+.b1Wrapper .hBox {
+  align-self: center;
+  background-color: rgb(0, 255, 0);
+  border-radius: 20px;
+  height: 5px;
+  justify-self: center;
+  width: 5px;
+}
+
+.b1Wrapper .lBox {
+  align-self: center;
+  background-color: rgba(0, 255, 0, 1);
+  border-radius: 20px 0 0 20px;
+  height: 100%;
+  height: 8px;
+  justify-self: center;
+  width: 100%;
+}
+.b1Wrapper .rBox {
+  align-self: center;
+  background-color: rgba(255, 0, 0, 1);
+  border-radius: 0 20px 20px 0;
+  height: 100%;
+  height: 8px;
+  justify-self: center;
+  width: 100%;
+}
+
+.b1Wrapper .aBox {
+  align-self: center;
+  background-color: rgb(255, 255, 0);
+  border-radius: 20px;
+  height: 100%;
+  height: 32px;
+  justify-self: center;
+  transform: rotateZ(-42deg);
+  width: 10px;
+}
+
+.b1Wrapper .show {
+  /* background-color: rgba(0, 255, 0, 1); */
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.b1Wrapper .hide {
+  /* background-color: rgba(0, 255, 0, 1); */
+   opacity: .2;
+   transition: opacity 0.3s;
+}
+
+.b1Wrapper .exhale {
+  background-color: rgba(255, 0, 0, 1);
+  opacity: .5;
+  transition: opacity 1s;
+}
+
+.b1Wrapper .exhaleStart {
+  background-color: rgba(255, 0, 0, 1);
+  /* background-color: rgba(0, 255, 0, 1); */
+  opacity: .2;
+  transition: all .3s;
+}
+
+.b1Wrapper .exhaleEnd{
+  /* background-color: rgba(0255, 0, 0, 1); */
+  background-color: rgba(0, 255, 0, 1);
+  opacity: 1;
+  transition: all .3s;
+}
+
+.b1Wrapper .number {
+  align-self: center;
+  /* background-color: orange; */
+  font-family: 'Chakra Petch';
+  grid-column: 7 / 10;
+  grid-row: 1 / 6;
+  justify-self: center;
+  text-align: center;
+}
+
+.b1Wrapper .number p {
+  font-size: 80px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.b1Wrapper .number p:last-of-type {
+  font-size: 16px;
+  margin: 0;
+  /* margin-top: -16px; */
+  opacity: .65;
+  padding: 0;
+  text-align: center;
+}
+
+.b1Wrapper .corner {
+  align-self: center;
+  background-color: var(--dot-purple);
+  border-radius: 50px;
+  height: 10px;
+  justify-self: center;
+  width: 10px;
+}
+
+.b1Wrapper .c1 {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+
+.b1Wrapper .c2 {
+  grid-column: 1 / 1;
+  grid-row: 2 / 2;
+}
+
+.b1Wrapper .c3 {
+  grid-column: 1 / 1;
+  grid-row: 3 / 3;
+}
+
+.b1Wrapper .c4 {
+  grid-column: 1 / 1;
+  grid-row: 4 / 4;
+}
+
+.b1Wrapper .c5 {
+  grid-column: 1 / 1;
+  grid-row: 5 / 5;
+}
+
+.b1Wrapper .c6 {
+  grid-column: 1 / 1;
+  grid-row: 6 / 6;
+}
+
+.b1Wrapper .c7 {
+  grid-column: 1 / 1;
+  grid-row: 7 / 7;
+}
+
+.b1Wrapper .c8 {
+  grid-column: 1 / 1;
+  grid-row: 8 / 8;
+}
+
+.b1Wrapper .c9 {
+  grid-column: 1 / 1;
+  grid-row: 9 / 9;
+}
+
+.b1Wrapper .c10 {
+  grid-column: 1 / 1;
+  grid-row: 10 / 10;
+}
+
+.b1Wrapper .c11 {
+  grid-column: 1 / 1;
+  grid-row: 11 / 11;
+}
+
+.b1Wrapper .c12 {
+  grid-column: 1 / 1;
+  grid-row: 12 / 12;
+}
+
+.b1Wrapper .c13 {
+  grid-column: 1 / 1;
+  grid-row: 13 / 13;
+}
+
+.b1Wrapper .c14 {
+  grid-column: 1 / 1;
+  grid-row: 14 / 14;
+}
+
+.b1Wrapper .c15 {
+  grid-column: 1 / 1;
+  grid-row: 15 / 15;
+}
+
+.b1Wrapper .one {
+  grid-column: 2 / 2;
+  grid-row: 1 / 1;
+}
+.b1Wrapper .two {
+  grid-column: 3 / 3;
+  grid-row: 1 / 1;
+}
+.b1Wrapper .three {
+  grid-column: 4 / 4;
+  grid-row: 1 / 1;
+}
+.b1Wrapper .four {
+  grid-column: 5 / 5;
+  grid-row: 1 / 1;
+}
+.b1Wrapper .five {
+  grid-column: 6 / 6;
+  grid-row: 1 / 1;
+}
+.b1Wrapper .six {
+  grid-column: 7 / 7;
+  grid-row: 1 / 1;
+}
+.b1Wrapper .seven {
+  grid-column: 2 / 2;
+  grid-row: 2 / 2;
+}
+.b1Wrapper .eight {
+  grid-column: 3 / 3;
+  grid-row: 2 / 2;
+}
+.b1Wrapper .nine {
+  grid-column: 4 / 4;
+  grid-row: 2 / 2;
+}
+.b1Wrapper .ten {
+  grid-column: 5 / 5;
+  grid-row: 2 / 2;
+}
+.b1Wrapper .eleven {
+  grid-column: 6 / 6;
+  grid-row: 2 / 2;
+}
+.b1Wrapper .twelve {
+  grid-column: 7 / 7;
+  grid-row: 2 / 2;
+}
+.b1Wrapper .thirteen {
+  grid-column: 2 / 2;
+  grid-row: 3 / 3;
+}
+.b1Wrapper .fourteen {
+  grid-column: 3 / 3;
+  grid-row: 3 / 3;
+}
+.b1Wrapper .fifteen {
+  grid-column: 4 / 4;
+  grid-row: 3 / 3;
+}
+.b1Wrapper .sixteen {
+  grid-column: 5 / 5;
+  grid-row: 3 / 3;
+}
+.b1Wrapper .seventeen {
+  grid-column: 6 / 6;
+  grid-row: 3 / 3;
+}
+.b1Wrapper .eighteen {
+  grid-column: 7 / 7;
+  grid-row: 3 / 3;
+}
+.b1Wrapper .nineteen {
+  grid-column: 2 / 2;
+  grid-row: 4 / 4;
+}
+.b1Wrapper .twenty {
+  grid-column: 3 / 3;
+  grid-row: 4 / 4;
+}
+.b1Wrapper .twentyone {
+  grid-column: 4 / 4;
+  grid-row: 4 / 4;
+}
+.b1Wrapper .twentytwo {
+  grid-column: 5 / 5;
+  grid-row: 4 / 4;
+}
+.b1Wrapper .twentythree {
+  grid-column: 6 / 6;
+  grid-row: 4 / 4;
+}
+.b1Wrapper .twentyfour {
+  grid-column: 7 / 7;
+  grid-row: 4 / 4;
+}
+.b1Wrapper .twentyfive {
+  grid-column: 2 / 2;
+  grid-row: 5 / 5;
+}
+.b1Wrapper .twentysix {
+  grid-column: 3 / 3;
+  grid-row: 5 / 5;
+}
+.b1Wrapper .twentyseventy {
+  grid-column: 4 / 4;
+  grid-row: 5 / 5;
+}
+.b1Wrapper .twentyeight {
+  grid-column: 5 / 5;
+  grid-row: 5 / 5;
+}
+.b1Wrapper .twentynine {
+  grid-column: 6 / 6;
+  grid-row: 5 / 5;
+}
+.b1Wrapper .thirty {
+  grid-column: 7 / 7;
+  grid-row: 5 / 5;
+}
+.b1Wrapper .thirtyone {
+  grid-column: 2 / 2;
+  grid-row: 6 / 6;
+}
+.b1Wrapper .thirtytwo {
+  grid-column: 3 / 3;
+  grid-row: 6 / 6;
+}
+.b1Wrapper .thirtythree {
+  grid-column: 4 / 4;
+  grid-row: 6 / 6;
+}
+.b1Wrapper .thirtyfour {
+  grid-column: 5 / 5;
+  grid-row: 6 / 6;
+}
+.b1Wrapper .thirtyfive {
+  grid-column: 6 / 6;
+  grid-row: 6 / 6;
+}
+.b1Wrapper .thirtysix {
+  grid-column: 7 / 7;
+  grid-row: 6 / 6;
+}
+.b1Wrapper .thirtyseven {
+  grid-column: 2 / 2;
+  grid-row: 7 / 7;
+}
+.b1Wrapper .thirtyeight {
+  grid-column: 3 / 3;
+  grid-row: 7 / 7;
+}
+.b1Wrapper .thirtynine {
+  grid-column: 4 / 4;
+  grid-row: 7 / 7;
+}
+.b1Wrapper .forty {
+  grid-column: 5 / 5;
+  grid-row: 7 / 7;
+}
+.b1Wrapper .fortyone {
+  grid-column: 6 / 6;
+  grid-row: 7 / 7;
+}
+.b1Wrapper .fortytwo {
+  grid-column: 7 / 7;
+  grid-row: 7 / 7;
+}
+.b1Wrapper .fortythree {
+  grid-column: 2 / 2;
+  grid-row: 8 / 8;
+}
+.b1Wrapper .fortyfour {
+  grid-column: 3 / 3;
+  grid-row: 8 / 8;
+}
+.b1Wrapper .fortyfive {
+  grid-column: 4 / 4;
+  grid-row: 8 / 8;
+}
+.b1Wrapper .fortysix {
+  grid-column: 5 / 5;
+  grid-row: 8 / 8;
+}
+.b1Wrapper .fortyseven {
+  grid-column: 6 / 6;
+  grid-row: 8 / 8;
+}
+.b1Wrapper .fortyeight {
+  grid-column: 7 / 7;
+  grid-row: 8 / 8;
+}
+.b1Wrapper .fortynine {
+  grid-column: 2 / 2;
+  grid-row: 9 / 9;
+}
+.b1Wrapper .fifty {
+  grid-column: 3 / 3;
+  grid-row: 9 / 9;
+}
+.b1Wrapper .fiftyone {
+  grid-column: 4 / 4;
+  grid-row: 9 / 9;
+}
+.b1Wrapper .fiftytwo {
+  grid-column: 5 / 5;
+  grid-row: 9 / 9;
+}
+.b1Wrapper .fiftythree {
+  grid-column: 6 / 6;
+  grid-row: 9 / 9;
+}
+.b1Wrapper .fiftyfour {
+  grid-column: 7 / 7;
+  grid-row: 9 / 9;
+}
+.b1Wrapper .fiftyfive {
+  grid-column: 2 / 2;
+  grid-row: 10 / 10;
+}
+.b1Wrapper .fiftysix {
+  grid-column: 3 / 3;
+  grid-row: 10 / 10;
+}
+.b1Wrapper .fiftyseven {
+  grid-column: 4 / 4;
+  grid-row: 10 / 10;
+}
+.b1Wrapper .fiftyeight {
+  grid-column: 5 / 5;
+  grid-row: 10 / 10;
+}
+.b1Wrapper .fiftynine {
+  grid-column: 6 / 6;
+  grid-row: 10 / 10;
+}
+.b1Wrapper .sixty {
+  grid-column: 7 / 7;
+  grid-row: 10 / 10;
+}
+.b1Wrapper .sixtyone {
+  grid-column: 2 / 2;
+  grid-row: 11 / 11;
+}
+.b1Wrapper .sixtytwo {
+  grid-column: 3 / 3;
+  grid-row: 11 / 11;
+}
+.b1Wrapper .sixtythree {
+  grid-column: 4 / 4;
+  grid-row: 11 / 11;
+}
+.b1Wrapper .sixtyfour {
+  grid-column: 5 / 5;
+  grid-row: 11 / 11;
+}
+.b1Wrapper .sixtyfive {
+  grid-column: 6 / 6;
+  grid-row: 11 / 11;
+}
+.b1Wrapper .sixtysix {
+  grid-column: 7 / 7;
+  grid-row: 11 / 11;
+}
+.b1Wrapper .sixtyseven {
+  grid-column: 2 / 2;
+  grid-row: 12 / 12;
+}
+.b1Wrapper .sixtyeight {
+  grid-column: 3 / 3;
+  grid-row: 12 / 12;
+}
+.b1Wrapper .sixtynine {
+  grid-column: 4 / 4;
+  grid-row: 12 / 12;
+}
+.b1Wrapper .seventy {
+  grid-column: 5 / 5;
+  grid-row: 12 / 12;
+}
+.b1Wrapper .seventyone {
+  grid-column: 6 / 6;
+  grid-row: 12 / 12;
+}
+.b1Wrapper .seventytwo {
+  grid-column: 7 / 7;
+  grid-row: 12 / 12;
+}
+.b1Wrapper .seventythree {
+  grid-column: 2 / 2;
+  grid-row: 13 / 13;
+}
+.b1Wrapper .seventyfour {
+  grid-column: 3 / 3;
+  grid-row: 13 / 13;
+}
+.b1Wrapper .seventyfive {
+  grid-column: 4 / 4;
+  grid-row: 13 / 13;
+}
+.b1Wrapper .seventysix {
+  grid-column: 5 / 5;
+  grid-row: 13 / 13;
+}
+.b1Wrapper .seventyseven {
+  grid-column: 6 / 6;
+  grid-row: 13 / 13;
+}
+.b1Wrapper .seventyeight {
+  grid-column: 7 / 7;
+  grid-row: 13 / 13;
+}
+.b1Wrapper .seventynine {
+  grid-column: 2 / 2;
+  grid-row: 14 / 14;
+}
+.b1Wrapper .eighty {
+  grid-column: 3 / 3;
+  grid-row: 14 / 14;
+}
+.b1Wrapper .eightyone {
+  grid-column: 4 / 4;
+  grid-row: 14 / 14;
+}
+.b1Wrapper .eightytwo {
+  grid-column: 5 / 5;
+  grid-row: 14 / 14;
+}
+.b1Wrapper .eightythree {
+  grid-column: 6 / 6;
+  grid-row: 14 / 14;
+}
+.b1Wrapper .eightyfour {
+  grid-column: 7 / 7;
+  grid-row: 14 / 14;
+}
+.b1Wrapper .eightyfive {
+  grid-column: 2 / 2;
+  grid-row: 15 / 15;
+}
+.b1Wrapper .eightysix {
+  grid-column: 3 / 3;
+  grid-row: 15 / 15;
+}
+.b1Wrapper .eightyseven {
+  grid-column: 4 / 4;
+  grid-row: 15 / 15;
+}
+.b1Wrapper .eightyeight {
+  grid-column: 5 / 5;
+  grid-row: 15 / 15;
+}
+.b1Wrapper .eightynine {
+  grid-column: 6 / 6;
+  grid-row: 15 / 15;
+}
+.b1Wrapper .ninety {
+  grid-column: 7 / 7;
+  grid-row: 15 / 15;
+}
+
+.b2Wrapper {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 5px;
+  grid-template-rows: repeat(10, 1fr);
+  /* margin: 1rem; */
+  height: 300px;
+}
+
+.b2Wrapper .box {
+  background-color: red;
+}
+
+.b2Wrapper .hBox {
+  align-self: center;
+  background-color: var(--breathe-in);
+  border-radius: 20px;
+  height: 8px;
+  justify-self: center;
+  width: 100%;
+}
+
+.b2Wrapper .vBox {
+  align-self: center;
+  background-color: var(--breathe-hold);
+  border-radius: 20px;
+  height: 100%;
+  height: 32px;
+  justify-self: center;
+  width: 8px;
+}
+
+.b2Wrapper .aBox {
+  align-self: center;
+  background-color: var(--breathe-out);
+  border-radius: 20px;
+  height: 100%;
+  height: 32px;
+  justify-self: center;
+  transform: rotateZ(-42deg);
+  width: 8px;
+}
+
+.b2Wrapper .show {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.b2Wrapper .hide {
+   opacity: .2;
+   transition: opacity 0.3s;
+}
+
+.b2Wrapper .number {
+  align-self: center;
+  /* background-color: orange; */
+  font-family: 'Chakra Petch';
+  grid-column: 7 / 10;
+  grid-row: 1 / 6;
+  justify-self: center;
+  text-align: center;
+}
+
+.b2Wrapper .number p {
+  font-size: 80px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.b2Wrapper .number p:last-of-type {
+  font-size: 16px;
+  margin: 0;
+  /* margin-top: -16px; */
+  opacity: .65;
+  padding: 0;
+  text-align: center;
+}
+
+.b2Wrapper .corner {
+  align-self: center;
+  background-color: var(--dot-purple);
+  border-radius: 50px;
+  height: 10px;
+  justify-self: center;
+  width: 10px;
+}
+
+.b2Wrapper .c1 {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+
+.b2Wrapper .c2 {
+  grid-column: 10 / 10;
+  grid-row: 1 / 1;
+}
+
+.b2Wrapper .c3 {
+  grid-column: 10 / 10;
+  grid-row: 9 / 9;
+}
+
+.b2Wrapper .one {
+  grid-column: 2 / 4;
+  grid-row: 1 / 1;
+}
+.b2Wrapper .two {
+  grid-column: 4 / 6;
+  grid-row: 1 / 1;
+}
+.b2Wrapper .three {
+  grid-column: 6 / 8;
+  grid-row: 1 / 1;
+}
+.b2Wrapper .four {
+  grid-column: 8 / 10;
+  grid-row: 1 / 1;
+}
+.b2Wrapper .five {
+  grid-column: 10 / 10;
+  grid-row: 2 / 2;
+}
+.b2Wrapper .six {
+  grid-column: 10 / 10;
+  grid-row: 3 / 3;
+}
+.b2Wrapper .seven {
+  grid-column: 10 / 10;
+  grid-row: 4 / 4;
+}
+.b2Wrapper .eight {
+  grid-column: 10 / 10;
+  grid-row: 5 / 5;
+}
+.b2Wrapper .nine {
+  grid-column: 10 / 10;
+  grid-row: 6 / 6;
+}
+.b2Wrapper .ten {
+  grid-column: 10 / 10;
+  grid-row: 7 / 7;
+}
+.b2Wrapper .eleven {
+  grid-column: 10 / 10;
+  grid-row: 8 / 8;
+}
+.b2Wrapper .twelve {
+  grid-column: 9 / 9;
+  grid-row: 9 / 9;
+}
+.b2Wrapper .thirteen {
+  grid-column: 8 / 8;
+  grid-row: 8 / 8;
+}
+.b2Wrapper .fourteen {
+  grid-column: 7 / 7;
+  grid-row: 7 / 7;
+}
+.b2Wrapper .fifteen {
+  grid-column: 6 / 6;
+  grid-row: 6 / 6;
+}
+.b2Wrapper .sixteen {
+  grid-column: 5 / 5;
+  grid-row: 5 / 5;
+}
+.b2Wrapper .seventeen {
+  grid-column: 4 / 4;
+  grid-row: 4 / 4;
+}
+.b2Wrapper .eighteen {
+  grid-column: 3 / 3;
+  grid-row: 3 / 3;
+}
+.b2Wrapper .nineteen {
+  grid-column: 2 / 2;
+  grid-row: 2 / 2;
+}
+
+.b3Wrapper {
+  display: grid;
+  /* grid-template-columns: repeat(6, 1fr); */
+  gap: 5px;
+  /* grid-template-rows: repeat(6, 1fr); */
+  /* margin: 1rem; */
+  height: 300px;
+}
+
+.b3Wrapper .box {
+  background-color: red;
+}
+
+.b3Wrapper .hBox {
+  align-self: center;
+  background-color: rgb(0, 255, 0);
+  border-radius: 20px;
+  height: 5px;
+  justify-self: center;
+  width: 5px;
+}
+
+.b3Wrapper .sBox {
+  align-self: center;
+  background-color: rgba(255, 255, 255, .65);
+  border-radius: 20px;
+  height: 100%;
+  height: 8px;
+  justify-self: center;
+  width: 100%;
+}
+
+.b3Wrapper .aBox {
+  align-self: center;
+  background-color: rgb(255, 255, 0);
+  border-radius: 20px;
+  height: 100%;
+  height: 32px;
+  justify-self: center;
+  transform: rotateZ(-42deg);
+  width: 10px;
+}
+
+.b3Wrapper .show {
+  background-color: rgba(0, 255, 0, 1);
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.b3Wrapper .hide {
+  background-color: rgba(0, 255, 0, 1);
+   opacity: .2;
+   transition: opacity 0.3s;
+}
+
+.b3Wrapper .exhale {
+  background-color: var(--breathe-out);
+  opacity: .5;
+  transition: opacity 1s;
+}
+
+.b3Wrapper .exhaleStart {
+  background-color: var(--breathe-out);
+  /* background-color: rgba(0, 255, 0, 1); */
+  opacity: .2;
+  transition: all .3s;
+}
+
+.b3Wrapper .exhaleEnd{
+  /* background-color: rgba(0255, 0, 0, 1); */
+  background-color: var(--breathe-out);
+  opacity: 1;
+  transition: all .3s;
+}
+
+.b3Wrapper .exhaleEndFinal{
+  /* background-color: rgba(0255, 0, 0, 1); */
+  background-color: var(--breathe-out);
+  opacity: .2;
+  transition: all .3s;
+}
+
+.b3Wrapper .number {
+  align-self: center;
+  /* background-color: orange; */
+  font-family: 'Chakra Petch';
+  grid-column: 7 / 10;
+  grid-row: 1 / 6;
+  justify-self: center;
+  text-align: center;
+}
+
+.b2Wrapper .number p {
+  font-size: 80px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.b3Wrapper .number p:last-of-type {
+  font-size: 16px;
+  margin: 0;
+  /* margin-top: -16px; */
+  opacity: .65;
+  padding: 0;
+  text-align: center;
+}
+
+.textDiv {
+  text-align: center!important;
+} 
+
+.text {
+  font-family: 'Chakra Petch';
+  font-size: 16px;
+  /* grid-column: 3 / 4;
+  grid-row: 1 / 1; */
+  margin: 0;
+  /* margin-bottom: 30px; */
+  margin-top: -30px;
+  opacity: .65;
+  padding: 0;
+  text-align: center!important;
+}
+
+.b3Wrapper .corner {
+  align-self: center;
+  background-color: var(--dot-purple);
+  border-radius: 50px;
+  height: 10px;
+  justify-self: center;
+  width: 10px;
+}
+
+.b3Wrapper textarea {
+  grid-column: 3 / 5;
+  grid-row: 1 / 1;
+}
+
+.b3Wrapper .c1 {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+
+.b3Wrapper .c2 {
+  grid-column: 7 / 7;
+  grid-row: 1 / 1;
+}
+
+.b3Wrapper .c3 {
+  grid-column: 7 / 7;
+  grid-row: 7 / 7;
+}
+
+.b3Wrapper .c4 {
+  grid-column: 1 / 1;
+  grid-row: 7 / 7;
+}
+
+.b3Wrapper .one {
+  grid-column: 2 / 2;
+  grid-row: 2 / 2;
+}
+.b3Wrapper .two {
+  grid-column: 3 / 3;
+  grid-row: 2 / 2;
+}
+.b3Wrapper .three {
+  grid-column: 4 / 4;
+  grid-row: 2 / 2;
+}
+.b3Wrapper .four {
+  grid-column: 5 / 5;
+  grid-row: 2 / 2;
+}
+.b3Wrapper .five {
+  grid-column: 6 / 6;
+  grid-row: 2 / 2;
+}
+.b3Wrapper .six {
+  grid-column: 2 / 2;
+  grid-row: 3 / 3;
+}
+.b3Wrapper .seven {
+  grid-column: 3 / 3;
+  grid-row: 3 / 3;
+}
+.b3Wrapper .eight {
+  grid-column: 4 / 4;
+  grid-row: 3 / 3;
+}
+.b3Wrapper .nine {
+  grid-column: 5 / 5;
+  grid-row: 3 / 3;
+}
+.b3Wrapper .ten {
+  grid-column: 6 / 6;
+  grid-row: 3 / 3;
+}
+.b3Wrapper .eleven {
+  grid-column: 2 / 2;
+  grid-row: 4 / 4;
+}
+.b3Wrapper .twelve {
+  grid-column: 3 / 3;
+  grid-row: 4 / 4;
+}
+.b3Wrapper .thirteen {
+  grid-column: 4 / 4;
+  grid-row: 4 / 4;
+}
+.b3Wrapper .fourteen {
+  grid-column: 5 / 5;
+  grid-row: 4 / 4;
+}
+.b3Wrapper .fifteen {
+  grid-column: 6 / 6;
+  grid-row: 4 / 4;
+}
+.b3Wrapper .sixteen {
+  grid-column: 2 / 2;
+  grid-row: 5 / 5;
+}
+.b3Wrapper .seventeen {
+  grid-column: 3 / 3;
+  grid-row: 5 / 5;
+}
+.b3Wrapper .eighteen {
+  grid-column: 4 / 4;
+  grid-row: 5 / 5;
+}
+.b3Wrapper .nineteen {
+  grid-column: 5 / 5;
+  grid-row: 5 / 5;
+}
+.b3Wrapper .twenty {
+  grid-column: 6 / 6;
+  grid-row: 5 / 5;
+}
+.b3Wrapper .twentyone {
+  grid-column: 2 / 2;
+  grid-row: 6 / 6;
+}
+.b3Wrapper .twentytwo {
+  grid-column: 3 / 3;
+  grid-row: 6 / 6;
+}
+.b3Wrapper .twentythree {
+  grid-column: 4 / 4;
+  grid-row: 6 / 6;
+}
+.b3Wrapper .twentyfour {
+  grid-column: 5 / 5;
+  grid-row: 6 / 6;
+}
+.b3Wrapper .twentyfive {
+  grid-column: 6 / 6;
+  grid-row: 6 / 6;
+}
+
+.b4Wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 5px;
+  /* grid-auto-rows: minmax(30px, auto); */
+  /* margin: 1rem; */
+  height: 300px;
+}
+
+.dim {
+  opacity: .35;
+}
+
+.bright {
+  opacity: 1;
+}
+
+.b4Wrapper .box {
+  background-color: var(--breathe-out);
+}
+
+.b4Wrapper .hBox {
+  align-self: center;
+  background-color: var(--breathe-in);
+  border-radius: 20px;
+  height: 10px;
+  justify-self: center;
+  width: 100%;
+}
+
+.b4Wrapper .hBox2 {
+  align-self: center;
+  background-color: var(--breathe-out);
+  border-radius: 20px;
+  height: 10px;
+  justify-self: center;
+  width: 100%;
+}
+
+.b4Wrapper .vBox {
+  align-self: center;
+  background-color: var(--breathe-hold);
+  border-radius: 20px;
+  height: 100%;
+  justify-self: center;
+  width: 10px;
+}
+
+.b4Wrapper .show {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.b4Wrapper .hide {
+   opacity: .2;
+   transition: opacity 0.3s;
+}
+
+.b4Wrapper .number {
+  align-self: center;
+  /* background-color: blue; */
+  font-family: 'Chakra Petch';
+  grid-column: 2 / 6;
+  grid-row: 2 / 6;
+  justify-self: center;
+  text-align: center;
+}
+
+.b4Wrapper .number p {
+  font-size: 80px;
+  text-align: center;
+}
+
+.b4Wrapper .number p:last-of-type {
+  font-size: 16px;
+  opacity: .65;
+  text-align: center;
+}
+
+.b4Wrapper .corner {
+  align-self: center;
+  background-color: var(--dot-purple);
+  border-radius: 50px;
+  height: 10px;
+  justify-self: center;
+  width: 10px;
+}
+
+.b4Wrapper .c1 {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+
+.b4Wrapper .c2 {
+  grid-column: 6 / 6;
+  grid-row: 1 / 1;
+}
+
+.b4Wrapper .c3 {
+  grid-column: 6 / 6;
+  grid-row: 6 / 6;
+}
+
+.b4Wrapper .c4 {
+  grid-column: 1 / 1;
+  grid-row: 6 / 6;
+}
+
+.b4Wrapper .one {
+  grid-column: 2 / 2;
+  grid-row: 1 / 1;
+}
+
+.b4Wrapper .two {
+  grid-column: 3 / 3;
+  grid-row: 1 / 1;
+}
+
+.b4Wrapper .three {
+  grid-column: 4 / 4;
+  grid-row: 1 / 1;
+}
+
+.b4Wrapper .four {
+  grid-column: 5 / 5;
+  grid-row: 1 / 1;
+}
+
+.b4Wrapper .five {
+  grid-column: 6 / 6;
+  grid-row: 2 / 2;
+}
+
+.b4Wrapper .six {
+  grid-column: 6 / 6;
+  grid-row: 3 / 3;
+}
+
+.b4Wrapper .seven {
+  grid-column: 6 / 6;
+  grid-row: 4 / 4;
+}
+
+.b4Wrapper .eight {
+  grid-column: 6 / 6;
+  grid-row: 5 / 5;
+}
+
+.b4Wrapper .nine {
+  grid-column: 5 / 5;
+  grid-row: 6 / 6;
+}
+
+.b4Wrapper .ten {
+  grid-column: 4 / 4;
+  grid-row: 6 / 6;
+}
+
+.b4Wrapper .eleven {
+  grid-column: 3 / 3;
+  grid-row: 6 / 6;
+}
+
+.b4Wrapper .twelve {
+  grid-column: 2 / 2;
+  grid-row: 6 / 6;
+}
+
+.b4Wrapper .thirteen {
+  grid-column: 1 / 1;
+  grid-row: 5 / 5;
+}
+
+.b4Wrapper .fourteen {
+  grid-column: 1 / 1;
+  grid-row: 4 / 4;
+}
+
+.b4Wrapper .fifteen {
+  grid-column: 1 / 1;
+  grid-row: 3 / 3;
+}
+
+.b4Wrapper .sixteen {
+  grid-column: 1 / 1;
+  grid-row: 2 / 2;
+}
