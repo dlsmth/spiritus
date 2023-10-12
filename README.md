@@ -8,8 +8,7 @@ https://www.dalesmith.com/spiritus
 
 HTML, CSS, ReactJS, TypeScript, MaterialUI, Recharts
 
-Spiritus
-Spiritus Screenshots
+Spiritus Screenshots:
 
 ![spritus screenshot](https://www.dalesmith.com/temp/spiritus_screenshot.png)
  
